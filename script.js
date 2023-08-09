@@ -23,6 +23,9 @@ const handleSubmit = (e) => {
   prompt.classList.add("hidden");
   successPrompt.classList.remove("hidden");
   successPrompt.classList.add("flex");
+
+  const userEmailSpan = document.getElementById("user-email");
+  userEmailSpan.innerText = inputField.value;
 };
 
 var form = document.getElementById("form");
